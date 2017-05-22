@@ -24,8 +24,8 @@
 
 <div dir="ltr">
 
-    compile 'com.github.ranjbarhadi:persian-app-store-utils:1.0'
-
+    compile 'com.github.ranjbarhadi:inAppBillingForPersianAppStores:1.0'
+    
 </div>
 
 دانلود اپ نمونه
