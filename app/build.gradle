@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        /* TODO(developer): Configure to sign app with a release key for testing.
+        release {
+            storeFile file('path/to/release/signing/key')
+            keyAlias 'release_key_alias'
+            keyPassword "${password}"
+            storePassword "${password}"
+        }*/
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "net.ranjbar.trivialdrivesample"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // TODO(developer): uncomment below once config above is complete and uncommented.
+            // signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile project(':persian-app-store-utils')
+}
