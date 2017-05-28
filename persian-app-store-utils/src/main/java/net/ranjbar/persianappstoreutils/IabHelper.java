@@ -166,6 +166,7 @@ public class IabHelper {
      * @param base64PublicKey کلید عمومی که از استور دریافت کرده اید
      * @param store           نام استور
      * @param intent          اسم اینت مورد نیاز برای راه اندازی
+     *                        باید از کلاس persianStore برای مقدار دهی قسمت store و intent استفاده نمود
      */
     public IabHelper(Context ctx, String base64PublicKey,
                      @persianStore.StorePackageName String store, @persianStore.StoreIntent String intent) {
@@ -177,10 +178,10 @@ public class IabHelper {
     }
 
     /**
-     * Returns a human-readable description for the given response code.
+     * یک توضیح قابل نوشتاری از جواب بازگشتی به سرور را باز می گرداند
      *
-     * @param code The response code
-     * @return A human-readable string explaining the result code.
+     * @param code کد بازگشتی
+     * @return متن توضیحی در مورد کد بازگشتی
      * It also includes the result code numerically.
      */
     public static String getResponseDesc(int code) {
