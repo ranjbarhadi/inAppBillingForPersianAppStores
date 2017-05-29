@@ -8,6 +8,8 @@
 
 نحوه راه اندازی
 -------------------
+
+[![Join the chat at https://gitter.im/Ranjbarhadi/in-AppBillingForPersianAppStores](https://badges.gitter.im/Ranjbarhadi/in-AppBillingForPersianAppStores.svg)](https://gitter.im/Ranjbarhadi/in-AppBillingForPersianAppStores?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 برای این کار ابتدا فایل build.gradle در شاخه ی اصلی پروژه ی خود را تغییر داده و ریپاسیتوری jitpack.io را به آن اضافه کنید. در پایان شکل کد شما باید همانند زیر باشد:
 
 <div dir="ltr">
